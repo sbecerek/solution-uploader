@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Palatino');
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: Palatino;
+    margin: 0;
+}
+
+.headline {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 5px;
+}
+
+#upload-form {
+    flex-basis: 60%;
+}
+
+.hint-box {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+}
+
+.form-fieldset-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 5px;
+    column-gap: 5px;
+}
+
+.form-label {
+    justify-self: end;
+}
+
+#submit-button {
+    grid-column: 2;
+    width: 25%;
+    justify-self: end;
+}
+
+.form-input[required="required"] {
+    font-weight: bold;
+}
+
+.form-input[required="required"]:valid {
+    background-color: palegreen;
+    border-color: green;
+}
+
+.form-input[required="required"]:invalid {
+    background-color: red;
+}
+
+
+/* removed extra class used advanced selector */
+
+
+/* .obligatory {
+    font-weight: bold;
+}
+
+.obligatory:valid {
+    background-color: palegreen;
+} */
+
+.form-input[readonly="readonly"] {
+    color: gray;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Solution Uploader</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="headline">Task Uploader</h1>
+
+
+        <div class="links">
+            <a class="validation-link" href="https://www.w3schools.com/tags/">All HTML elements</a>
+            <a class="validation-link" href="https://www.w3schools.com/cssref/default.asp">All CSS Styles</a>
+            <a class="validation-link" href="https://validator.w3.org/nu/#file">Validate HTML</a>
+        </div>
+
+    </header>
+    <div class="container">
+        <form id="upload-form" action="">
+            <fieldset form="upload-form">
+                <legend align="center">Solution</legend>
+
+
+                <div class="form-content">
+                    <div class="form-fieldset-wrapper">
+                        <label class="form-label" for="fname">Name</label>
+                        <input class="form-input" type="text" name="fname" id="fname">
+
+                        <label class="form-label" for="sname">Surname</label>
+                        <input class="form-input" type="text" name="sname" id="sname">
+
+                        <label class="form-label" for="">E-mail</label>
+                        <input class="form-input" type="email" name="email" id="email" required="required">
+
+                        <label class="form-label" for="myfile">Solution</label>
+                        <input class="form-input" type="file" id="myfile" name="myfile" required="required">
+
+                        <label class="form-label" for="supervisor">Lab supervisor</label>
+                        <select class="form-input" name="supervisor" id="supervisor" required="required">
+                            <option value="" selected value>Select Supervisor</option>
+                            <option value="Maciej Bednarz">Maciej Bednarz</option>
+                            <option value="Michał Okulewicz">Michał Okulewicz</option>
+                            <option value="Marcin Sikorski">Marcin Sikorski</option>
+                        </select>
+
+
+                        <label class="form-label" for="upload-datetime">Current time</label>
+                        <input class="form-input" id="upload-datetime" type="datetime" readonly="readonly" placeholder="05.09.1997 11.45">
+
+                        <input id="submit-button" value="Send" type="submit">
+                    </div>
+
+                </div>
+
+            </fieldset>
+        </form>
+
+        <div class="hint-box">
+            <h1>Hint</h1>
+            <p>Better late than never...</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
